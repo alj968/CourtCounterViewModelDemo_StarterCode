@@ -53,38 +53,30 @@ class MainActivity : AppCompatActivity() {
     private fun setupClickListeners() {
         binding.teamA3.setOnClickListener {
             addPointsForTeamA(3)
-            updateTeamAScoreView()
         }
 
         binding.teamB3.setOnClickListener {
             addPointsForTeamB(3)
-            updateTeamBScoreView()
         }
 
         binding.teamA2.setOnClickListener {
             addPointsForTeamA(2)
-            updateTeamAScoreView()
         }
 
         binding.teamB2.setOnClickListener {
             addPointsForTeamB(2)
-            updateTeamBScoreView()
         }
 
         binding.teamAFree.setOnClickListener {
             addPointsForTeamA(1)
-            updateTeamAScoreView()
         }
 
         binding.teamBFree.setOnClickListener {
             addPointsForTeamB(1)
-            updateTeamBScoreView()
         }
 
         binding.reset.setOnClickListener {
             resetScore()
-            updateTeamAScoreView()
-            updateTeamBScoreView()
         }
     }
 }
